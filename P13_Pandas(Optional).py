@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jun  6 15:31:57 2018
-
-@author: vsolotyc
-"""
-
 #Aufgabe 1
 """ Erstellen Sie einen Pandas Datenframe. Verwenden Sie dazu das unten 
 stehende Beispiel. Aendern Sie das Beispiel so das Sie dem existierenden 

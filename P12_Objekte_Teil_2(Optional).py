@@ -13,7 +13,7 @@ class Auto:
 
 # Aufgabe 2 (public vs privat)
 """Gegeben ist die Klasse "Auto2".
-Was ist der Unterschied zur Klasse "Auto" von Aufgabe 2?
+Was ist der Unterschied zur Klasse "Auto" von Aufgabe 1?
 1. Erstellen Sie ein Objekt mit dem Namen "polo" und initialisieren Sie bei der
 Erstellung des Objektes das Gewicht mit 1500
 2. Geben Sie das Gewicht mit dem Punktoperator in der Konsole aus
@@ -62,8 +62,7 @@ in der Klasse an, welche koennte die richtige sein fuer diese Aufgabe?
 suchen Sie sich die Funktion die das erledigen koennte
 4. Geben Sie das Gewicht in der Konsole aus, schauen sie sich dazu die Funktionen 
 in der Klasse an, welche koennte die richtige sein fuer diese Aufgabe?
-Tipp: Schauen Sie sich die Initialisierung an 
-"""
+Tipp: Schauen Sie sich die Initialisierung an """
 class Auto3:
 
     def __init__(self,gewicht):

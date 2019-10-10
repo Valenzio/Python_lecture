@@ -52,6 +52,9 @@ print(satz)
 zahl = 1000000
 print("zahl")
 print(zahl)
+#Kombination von strings und Zahlen
+print("Die Zahl hat einen Wert von ", zahl ,"und ist somit groesser als", 0)
+print("Die Zahl hat einen Wert von " + str(zahl) + "und ist somit groesser als", 0)
 
 #Aufgabe 8
 """Berechnen Sie den Wert x fuer x = 1*2**3+2-2*2-2 und geben Sie das Ergebniss

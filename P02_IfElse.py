@@ -51,7 +51,7 @@ Dies kommt daher, das sobald das Schluessel Wort 'if' eingeben wird, wartet
 python auf eine Eingabe in dem Einzug unter dem 'if'.
 Deshalb muessen Zeilen in Python die einen Einzug haben, IMMER 
 zusammen/gleichzeitig ausgefuehrt werden."""
-x = 20
+x = 5
 if x>10:
     print("x ist groesser")#diese Zeile wird nur ausgefuehrt wenn x>10 ist
     
@@ -85,11 +85,11 @@ if x>1:
         print("Weniger als 100")
 print("Alles fertig")
 
-#Aufgabe 8
+#Aufgabe 9
 """Bauen Sie die If-Abfrage, wie sie im Flussdiagramm auf der Folie 
 abgebildet ist"""
 
-#Aufgabe 9 (Einfache If Else Abfrage)
+#Aufgabe 10 (Einfache If Else Abfrage)
 """Fuehren Sie folgende Zeilen Code auf einmal aus. Veraendern Sie den Wert x,
 so dass die Ausgabe "kleiner gleich" in der Konsole angezeigt wird."""
 x=50
@@ -99,28 +99,29 @@ else:
     print("kleiner gleich")
 print("Alles fertig")
 
-#Aufgabe 10
+#Aufgabe 11
 """Bauen Sie die If Else-Abfrage, wie sie im Flussdiagramm auf der Folie 
 abgebildet ist"""
 
-#Aufgabe 11 (Einfache If Else Abfrage)
-"""Fuehren Sie folgende Zeilen Code auf einmal aus. Aendern Sie den Code so,
-dass die Ausgabe "groesser als 70" in der Konsole angezeigt wird."""
-x=71
+#Aufgabe 12 (Einfache If Else Abfrage)
+"""Fuehren Sie folgende Zeilen Code auf einmal aus. Fuegen Sie dem Code eine 
+elif Abfrage ein, so dass die Ausgabe "groesser als 5" in der Konsole 
+angezeigt wird."""
+x=7
 if x>20:
     print("groesser als 20")
-elif x>50:
-    print("groesser als 50")
+elif x>10:
+    print("groesser als 10")
 else: 
     print("kleiner gleich 20")
     
 print("Alles fertig")
 
-#Aufgabe 12
+#Aufgabe 13
 """Bauen Sie die If-Elif-Else-Abfrage, wie sie im Flussdiagramm auf der Folie 
 abgebildet ist"""
 
-#Aufgabe 13 (Aufgabe 1.2 aus der VBA Aufgabensammlung 3.7)
+#Aufgabe 14 (Aufgabe 1.2 aus der VBA Aufgabensammlung 3.7)
 """Aufgabe: Erstellen Sie eine VBA-Prozedur, in der bestimmt werden soll, ob 
 sich der Wert für x in einem Bereich von [a, b], mit a<b befindet. Für die 
 Eingabe aller Variablen soll jeweils die input-Funktion verwendet werden, die 
@@ -132,14 +133,14 @@ eingeben werden, wenn ein gültiger Bereich vorliegt."""
 a= float(input("Geben Sie eine Zahl fuer a ein\n"))
 b= float(input("Geben Sie eine Zahl fuer b ein\n"))
 
-#Aufgabe 13.1 (Aufgabe 1.2A aus der VBA Aufgabensammlung 3.7)
+#Aufgabe 14.1 (Aufgabe 1.2A aus der VBA Aufgabensammlung 3.7)
 """Der Wert soll innerhalb des Bereichs ]a, b[ liegen. """
-#Aufgabe 13.2 (Aufgabe 1.2B aus der VBA Aufgabensammlung 3.7)
+#Aufgabe 14.2 (Aufgabe 1.2B aus der VBA Aufgabensammlung 3.7)
 """Der Wert von x soll außerhalb des Bereichs [a, b] liegen."""
-#Aufgabe 13.3 (Aufgabe 1.2C aus der VBA Aufgabensammlung 3.7)
+#Aufgabe 14.3 (Aufgabe 1.2C aus der VBA Aufgabensammlung 3.7)
 """Der Wert von x soll größer als 0 sein und innerhalb des Bereichs [a, b] 
 liegen."""
-#Aufgabe 13.4 (Aufgabe 1.2D aus der VBA Aufgabensammlung 3.7)
+#Aufgabe 14.4 (Aufgabe 1.2D aus der VBA Aufgabensammlung 3.7)
 """Der Wert von x soll innerhalb des Bereichs [a, b] oder [-b, -a] liegen. 
 Option: An Stelle der Bereichsprüfung soll für a der kleinere der beiden 
 eingegebenen Werte verwendet werden."""

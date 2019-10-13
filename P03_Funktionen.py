@@ -12,8 +12,8 @@ mit:
 x=1
 y=2
 z=3
-Ueberlegen Sie sich, was passiert wenn Sie die Funktion f immer wieder verwenden
-muessen, aber mit wechselnden Eingangsparameter x,y,z"""
+Ueberlegen Sie sich, was passiert wenn Sie die Funktion f immer wieder 
+verwenden muessen, aber mit wechselnden Eingangsparameter x,y,z"""
 
 
 # Aufgabe 3 (Definieren einer Funktion)
@@ -48,8 +48,8 @@ Ausgabewert ist f. Verwenden Sie eine if-else Abfrage im Funktionskoerper"""
 folgenden Werte:
 g1=func2(3,4,5)
 g2=func2(-3,4,5)
-
 g1 und g2 sind dabei neue Variablen, denen Sie die Funktionswerte zuweisen."""    
+
 
 #Aufgabe 7 (Funktion mit mehreren Ausgabewerten)
 """Definieren Sie eine Funktion in Python mit dem Funktionsnamen func, 
@@ -125,11 +125,11 @@ def myfunc2(a,b):
 
 result=myfunc2(5,10)
 
-#Aufgabe 14 (globa vs local Variablen fuer Fortgeschrittene)
+#Aufgabe 14 (global vs local Variablen fuer Fortgeschrittene)
 """Fuehren Sie den Code der unten steht aus. """
 a = 1
 
-# Verwendet globale Variable, da es kein lokales 'a' existiert.
+# Verwendet globale Variablen, da es kein lokales 'a' existiert.
 def f(): 
 	print ('Inside f() : ', a )
 
@@ -159,3 +159,25 @@ print (a)
 """Weisen Sie der Varibale x den Satz "Hello World" zu, indem Sie eine Eingabe 
 von dem User in der Konsole aufnehmen. Verwenden Sie die "input()" Funktion 
 Geben Sie die Eingabe in der Konsole aus."""
+
+
+#Aufgabe 16 ((Aufgabe 1.7A aus der VBA Aufgabensammlung 3.7))
+"""Erstellen Sie eine Funktion Quadrat, die den Flächeninhalt eines Quadrats 
+berechnet. Ueberlegen Sie sich was die Input und Output Parameter sind"""
+
+
+#Aufgabe 17 ((Aufgabe 1.7C aus der VBA Aufgabensammlung 3.7))
+"""Erstellen Sie eine Funktion Kreis, die den Flächeninhalt eines Kreises
+berechnet. Der Standardwert fuer den Radius ist 1, falls kein Radius an die 
+Funktion uebergeben wird Ueberlegen Sie sich was die Input und Output Parameter
+sind?"""
+
+
+#Aufgabe 18
+"""Schreiben sie eine Funktion die die Steigung von der Funktion f(x)=x**n 
+berechnet. Input ist x und n und output ist f'(x)
+der Wert x und n soll durch eine Input-Abfrage vollzogen warden,
+die Ausgabe der Funktion soll durch einen print Befehl geschehen.
+"""
+
+

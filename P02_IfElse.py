@@ -79,10 +79,10 @@ abgebildet ist"""
 """Fuehren Sie folgende Zeilen Code auf einmal aus. Veraendern Sie den Wert x,
 so dass die Ausgabe "Weniger als 100" in der Konsole angezeigt wird."""
 x=100
-if x>1:
-    print("Mehr als Eins")
-    if x<100:
-        print("Weniger als 100")
+if x<1:
+    print("Weniger als Eins")
+    if x>0:
+        print("Mehr als 0")
 print("Alles fertig")
 
 #Aufgabe 9
@@ -103,7 +103,7 @@ print("Alles fertig")
 """Bauen Sie die If Else-Abfrage, wie sie im Flussdiagramm auf der Folie 
 abgebildet ist"""
 
-#Aufgabe 12 (Einfache If Else Abfrage)
+#Aufgabe 12 (Einfache If-Elif-Else Abfrage)
 """Fuehren Sie folgende Zeilen Code auf einmal aus. Fuegen Sie dem Code eine 
 elif Abfrage ein, so dass die Ausgabe "groesser als 5" in der Konsole 
 angezeigt wird."""

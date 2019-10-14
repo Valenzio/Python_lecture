@@ -6,14 +6,31 @@ Sie wie sich x im Variable explorer veraendert"""
 
 #Aufgabe 2
 """Loesen Sie Aufgabe 2 die auf der Powerpoint Folie ist"""
+#Loesung
+x=0
+x=x+1
+x=x+1
+x=x+1
+print(x)
+
+x=12.0
+y=2*x
+x=6
+z=x+y
 
 #Aufgabe 3
 """Berechnen Sie x = 1*2**3+2-2*2-2 in Python"""
+#Loesung
+x = 1*2**3+2-2*2-2
+
 
 #Aufgabe 4
 """Fuegen Sie zur der unten stehenden Gleichung Klammern hinzu, 
 damit die Gleichung einfacher zu Lesen ist"""
 x = 10/2/2/3+3*4**5/3/2/1-2
+#Loesung
+x = 10/(2*2*3)+3*4**5/(3*2*1)-2
+
 
 #Aufgabe 5
 """1. Leeren Sie Ihren Variable explorer, indem Sie auf das Radiergummi Zeichen 

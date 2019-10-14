@@ -44,7 +44,7 @@ Beobachten Sie welche Eintraege im Variablen explorer getaetigt werden"""
 a = 10	#Definition einer Variablen mit einer Zahl (integer)
 b = a	#Definition einer Variablen durch eine andere Variable
 c= 'a'	#Definition einer Variablen mit einem Buchstaben (string)
-c= "a" 	#macht das gleiche nochmal bloss mit (") anstatt (')
+c= "a" #macht das gleiche nochmal bloss mit (") anstatt (')
 d= "Man kann auch ganze Saetze als string definieren"
 e= "1"	 #Man kann auch Zahlen in einen string schreiben
 e=1

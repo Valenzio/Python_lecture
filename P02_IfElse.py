@@ -158,7 +158,7 @@ print("Alles fertig")
 
 #Aufgabe 13
 """Bauen Sie die If-Elif-Else-Abfrage, wie sie im Flussdiagramm auf der Folie 
-abgebildet ist"""
+zu sehen ist"""
 #Loesung
 x=50
 if x<40:

@@ -53,6 +53,8 @@ f= e+1	#Wird nicht funktionieren, da man kein Wort mit einer Zahl addieren kann
 #Aufgabe 6
 """Erstellen Sie eine Variable, mit dem namen 'satz' und weisen sie ihr den 
 string 'Hello World' zu"""
+#Loesung
+satz = "Hello World"
 
 #Aufgabe 7
 """1. Leeren Sie Ihren Variable explorer, indem Sie auf das Radiergummi Zeichen 

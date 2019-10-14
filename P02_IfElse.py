@@ -21,6 +21,9 @@ um das Ergebniss in der Konsole anzuzeigen"""
 s= 20
 r= 10
 
+#Loesung
+print(r>s)
+
 #Aufgabe 3 (Zeilenumbruch im Editor)
 """Es kommt in Python vor das man eine Lange Zeile Code schreiben muss. Um die 
 Uebersicht zu behalten kann man einen Zeilenumbruch einfuegen. Hier einige 
@@ -70,15 +73,28 @@ if x!=y:
 #Aufgabe 6
 """Bauen Sie die If-Abfrage, wie sie im Flussdiagramm auf der Folie 
 abgebildet ist"""
+#Loesung
+x=5
+if x<10:
+    print("kleiner")
+print("ende")
 
 #Aufgabe 7
 """Bauen Sie die If-Abfrage, wie sie im Flussdiagramm auf der Folie 
 abgebildet ist"""
+#Loesung
+x=10
+if x<10:
+    print("kleiner")
+if x>10:
+    print("groesser")
+print("ende")
 
 #Aufgabe 8
 """Fuehren Sie folgende Zeilen Code auf einmal aus. Veraendern Sie den Wert x,
-so dass die Ausgabe "Weniger als 100" in der Konsole angezeigt wird."""
-x=100
+so dass die Ausgabe "Weniger als 1" in der Konsole angezeigt wird."""
+#Loesung
+x=-1
 if x<1:
     print("Weniger als Eins")
     if x>0:
@@ -88,11 +104,19 @@ print("Alles fertig")
 #Aufgabe 9
 """Bauen Sie die If-Abfrage, wie sie im Flussdiagramm auf der Folie 
 abgebildet ist"""
+#Loesung
+x=50
+if x>1:
+    print("Mehr als Eins")
+    if x<100:
+        print("Weniger als 100")
+print("Alles fertig")
 
 #Aufgabe 10 (Einfache If Else Abfrage)
 """Fuehren Sie folgende Zeilen Code auf einmal aus. Veraendern Sie den Wert x,
 so dass die Ausgabe "kleiner gleich" in der Konsole angezeigt wird."""
-x=50
+#Loesung
+x=19
 if x>20:
     print("groesser")
 else:
@@ -102,16 +126,31 @@ print("Alles fertig")
 #Aufgabe 11
 """Bauen Sie die If Else-Abfrage, wie sie im Flussdiagramm auf der Folie 
 abgebildet ist"""
-
+#Loesung
+x=50
+y=20
+if x>20:
+    print("Groesser")
+    if y>20:
+        print("GrossGross")
+    else:
+        print("GrossKlein")
+else:
+    print("Kleiner")
+print("ende")
+    
 #Aufgabe 12 (Einfache If-Elif-Else Abfrage)
 """Fuehren Sie folgende Zeilen Code auf einmal aus. Fuegen Sie dem Code eine 
 elif Abfrage ein, so dass die Ausgabe "groesser als 5" in der Konsole 
 angezeigt wird."""
+#Loesung
 x=7
 if x>20:
     print("groesser als 20")
 elif x>10:
     print("groesser als 10")
+elif x>5:
+    print("groesser als 5")
 else: 
     print("kleiner gleich 20")
     
@@ -120,6 +159,17 @@ print("Alles fertig")
 #Aufgabe 13
 """Bauen Sie die If-Elif-Else-Abfrage, wie sie im Flussdiagramm auf der Folie 
 abgebildet ist"""
+#Loesung
+x=50
+if x<40:
+    print("L")
+elif x<100:
+    print("XL")
+else: 
+    print("XXL")
+    
+print("Alles fertig")
+
 
 #Aufgabe 14 (Aufgabe 1.2 aus der VBA Aufgabensammlung 3.7)
 """Aufgabe: Erstellen Sie eine VBA-Prozedur, in der bestimmt werden soll, ob 

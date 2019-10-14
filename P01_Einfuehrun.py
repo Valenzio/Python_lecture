@@ -79,7 +79,10 @@ print("Die Zahl hat einen Wert von " + str(zahl) + "und ist somit groesser als",
 
 #Aufgabe 8
 """Berechnen Sie den Wert x fuer x = 1*2**3+2-2*2-2 und geben Sie das Ergebniss
-in der Konsole aus"""                          
+in der Konsole aus"""    
+#Loesung
+x = 1*2**3+2-2*2-2
+print(x)                      
 
 #Aufgabe 9
 """1. Leeren Sie Ihren Variable explorer, indem Sie auf das Radiergummi Zeichen 

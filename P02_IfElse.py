@@ -119,7 +119,7 @@ print("Alles fertig")
 
 #Aufgabe 13
 """Bauen Sie die If-Elif-Else-Abfrage, wie sie im Flussdiagramm auf der Folie 
-abgebildet ist"""
+zu sehen ist"""
 
 #Aufgabe 14 (Aufgabe 1.2 aus der VBA Aufgabensammlung 3.7)
 """Aufgabe: Erstellen Sie eine VBA-Prozedur, in der bestimmt werden soll, ob 

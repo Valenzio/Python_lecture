@@ -4,8 +4,9 @@
 oder hier in Python. Fuehren Sie dabei Zeile fuer Zeile aus und beobachten
 Sie wie sich x im Variable explorer veraendert"""
 
+
 #Aufgabe 2
-"""Loesen Sie Aufgabe 2 die auf der Powerpoint Folie ist"""
+"""Loesen Sie Aufgabe 2, die auf der Powerpoint Folie abgebildet ist"""
 #Loesung
 x=0
 x=x+1
@@ -17,6 +18,7 @@ x=12.0
 y=2*x
 x=6
 z=x+y
+
 
 #Aufgabe 3
 """Berechnen Sie x = 1*2**3+2-2*2-2 in Python"""

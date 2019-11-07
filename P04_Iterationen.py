@@ -27,10 +27,21 @@ print ("alles fertig")
 Zahl 3 wird folgender Text ausgegeben: "Alle guten Dinge sind drei"
 Verwenden Sie eine if-Abfrage und die range Funktion, um die Aufgabe
 umzusetzten. """
-
+#Loesung
+for ii in range(6):
+    if ii == 3:
+        print("Alle guten Dinge sind drei")
+    else:
+        print (ii)   
+print ("alles fertig")
 
 # Aufgabe 5 (Schleife die aufsummiert)
 """Erstellen Sie eine for-Schleife, die Zahlen von 0 bis 10 aufsummiert. """
+#Loesung
+sum=0
+for ii in range(11):
+    sum = sum + ii
+    print (sum)    
 
 
 # Aufgabe 6 (Modifikation der range-Funktion)
@@ -38,7 +49,10 @@ umzusetzten. """
 Sie die range Funktion, aehnlich wie in Aufgabe 3.
 Suchen Sie im Internet wie man die range-Funktion so aendert das die 
 gewuenschten Zahlen ausgegeben werden. """
-
+#Loesung
+for ii in range(5,11):
+    print (ii)    
+print ("alles fertig")
 
 # Aufgabe 7
 """Erstellen Sie eine for-Schleife, die Zahlen von 5 bis 20 ausgibt, aber nur 
@@ -48,7 +62,10 @@ Suchen Sie im Internet wie man die range-Funktion so aendert das die
 gewuenschten Zahlen ausgegeben werden. 
 Bonus Aufgabe fuer die Pros: Verwenden Sie range(20) fuer die Definition der
 Schleife und loesen Sie trotzdem die Aufgabe."""
-
+#Loesung
+for ii in range(5,21,2):
+    print (ii)    
+print ("alles fertig")
 
 # Aufgabe 8
 """Erstellen Sie eine for-Schleife, die Zahlen von 10 bis 0 (10, 9, 8, 7, 6...) 
@@ -58,6 +75,11 @@ Zahlen in umgekehrter Reihenfolge ausgegeben werden.
 Bonus Aufgabe fuer die Pros: Verwenden Sie range(11) fuer die Definition der
 Schleife und loesen Sie trotzdem die Aufgabe.
 """
+#Loesung
+for ii in range(10,-1,-1):
+    print (ii)    
+print ("alles fertig")
+
 
 # Aufgabe 9 (While-Schleife Einfuehrung)
 """Fuehren Sie den unten stehenden Code auf einmal aus. Es handelt sich hierbei 
@@ -90,10 +112,13 @@ wird, bis x groesser als 50 ist. Lassen Sie nach jeder Addition das Ergebniss
 mit einer print-Funktion ausgeben.
 Gegeben ist ein Beispiel wie man x von 0 auf 1 erhoeht. Sie muessen nun dieses
 Beispiel in eine Schleife einfuegen."""
+#Loesung
 x=0
 increment = 1
-x=x+increment
-print(x)
+while x <=50:
+    
+    x=x+increment
+    print(x)
 
 
 # Aufgabe 12 
@@ -103,10 +128,12 @@ Wert wird jedesmal per input-Funktion abgefragt.
 Lassen Sie nach jeder Addition das Ergebniss mit einer
 print-Funktion ausgeben. Verwenden Sie eine while-Schleife.
 Bonus Aufgabe fuer die Pros: Verwenden Sie eine for-Schleife"""
+#Loesung
 x=0
-increment = int(input("Geben Sie eine ganze Zahl zwischen 1 und 10 ein:"))
-x=x+increment
-print(x)
+while x <=50:
+    increment = int(input("Geben Sie eine ganze Zahl zwischen 1 und 10 ein:"))
+    x=x+increment
+    print(x)
 
 
 #Aufgabe 13 (Break-Statement)
@@ -150,8 +177,12 @@ Code muss selbstaendig die groesste Zahl finden. (Sie koennen davon ausgehen
 das die kleinste Zahl -10000 ist.)
 Bonus Aufgabe fuer die Pros: Loesen Sie die Aufgabe mit einer while-Schleife
 """
+#Loesung
+groeste_zahl = -10000
 for ii in [3, 43,58, 84,30,-2]:
-    
+    if ii>groeste_zahl:
+        groeste_zahl =ii
+    print(groeste_zahl)
         
 #Aufgabe 16
 """ Gegeben ist eine Ansammlung von Zahlen :[3, 43,3,58, 84,3,30,-2,3]. Wie oft
@@ -161,11 +192,13 @@ das Sie keine Einsicht in die Ansammlung von Zahlen haben. Ihr Code muss selbst-
 aendig die groesste Zahl finden. 
 Bonus Aufgabe fuer die Pros: Loesen Sie die Aufgabe mit einer while-Schleife
 """
+#Loesung
 lookout=3 # look out for that number in the list
 count=0 # set a counter to 0
 for ii in [3, 43,3,58, 84,3,30,-2,3]:
-
-        
+    if ii == lookout:
+        count = count+1
+    print(count)        
 print("Number of times, 3 appeared:" + str(count))
 
 
@@ -176,6 +209,11 @@ ausgegeben wird, aehnlich wie in Aufgabe 2. Ersetzten Sie dabei den Buchstaben
 Bonus Aufgabe fuer die Pros: Geben Sie am Ende den kompletten Satz in der 
 Konsole wieder, mit den geaenderten Buchstaben."""
 x=input("Geben Sie einen Satz ein:\n")
+for ii in x:
+    if ii == "l":
+        print("r")
+    else:
+        print(ii)
 
 
 

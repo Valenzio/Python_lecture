@@ -141,4 +141,21 @@ print(element)
 list_con=[1,2,3,[4,5,6,[7,8]],9]
 
 
+#Aufgabe 14 (Aufgabe 1.5A-C aus der VBA Aufgabensammlung 3.7)
+"""Erstellen Sie einen Code der Ihnen die vorgegebenen Ergebnisse erzeugt. 
+Sehen Sie die Vorlage in Excel als Textausgabe in der Konsole, trennen Sie jede
+Zelle mit einem Leerzeichen von einander. Behandeln Sie leere Excel-Zellen als
+Leerzeichen. Unten sehen Sie die Python-Loesung fuer das 
+"Einfuehrende Beispiel"
+"""
+count=0
+liste=[6,2,7,3,4]
+for ii in range(6): 
+    text = " "
+    if ii==1: #erste Zeile
+        for kk in liste:
+            text = text + str(kk) + " "
+    elif ii>1:
+        text = liste[ii-2]
 
+    print(text)

@@ -1,24 +1,24 @@
 # Aufgabe 1 (for - Schleife durch eine Liste)
 """Fuehren Sie den unten stehenden Code auf einmal aus. Beobachten Sie die 
 Ausgabe in der Konsole. Welche Zahlen werden ausgegeben."""
-for i in [1,2,3,4,5]:
-    print (i)
+for ii in [1,2,3,4,5]:
+    print (ii)
 print("alles fertig")
 
 
 # Aufgabe 2 (for - Scheife durch einen String)
 """Fuehren Sie den unten stehenden Code auf einmal aus. Beobachten Sie die 
 Ausgabe in der Konsole. Welche Ausgabe sehen Sie?"""
-for i in "hello World":
-    print (i)
+for ii in "hello World":
+    print (ii)
 print ("alles fertig")
 
 
 # Aufgabe 3 (for - Schleife mit der range Funktion)
 """Fuehren Sie den unten stehenden Code auf einmal aus. Beobachten Sie die 
 Ausgabe in der Konsole. Welche Ausgabe sehen Sie?"""
-for i in range(5):
-    print (i)    
+for ii in range(5):
+    print (ii)    
 print ("alles fertig")
 
 
@@ -150,7 +150,7 @@ Code muss selbstaendig die groesste Zahl finden. (Sie koennen davon ausgehen
 das die kleinste Zahl -10000 ist.)
 Bonus Aufgabe fuer die Pros: Loesen Sie die Aufgabe mit einer while-Schleife
 """
-for i in [3, 43,58, 84,30,-2]:
+for ii in [3, 43,58, 84,30,-2]:
     
         
 #Aufgabe 16
@@ -163,7 +163,7 @@ Bonus Aufgabe fuer die Pros: Loesen Sie die Aufgabe mit einer while-Schleife
 """
 lookout=3 # look out for that number in the list
 count=0 # set a counter to 0
-for i in [3, 43,3,58, 84,3,30,-2,3]:
+for ii in [3, 43,3,58, 84,3,30,-2,3]:
 
         
 print("Number of times, 3 appeared:" + str(count))
@@ -179,4 +179,4 @@ x=input("Geben Sie einen Satz ein:\n")
 
 
 
-
+    

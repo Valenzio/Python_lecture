@@ -5,7 +5,8 @@ Laenge des Satzes (Anzahl aller Zeichen) mit einer print() Funktion auszugeben.
 Bonus fuer die Pros: Geben Sie die Satzlaenge ohne Leerzeichen an
 """
 sen=input("Geben Sie einen beliebigen Satz in der Konsole ein\n")
-
+#Loesung
+print(len(sen))
 
 #Aufgabe 2 (Untersuchen ob ein Buchstabe in einem String vorkommt)
 """ Erstellen Sie eine Variable mit dem Namen "sen" und weisen Sie Ihr den 
@@ -13,7 +14,9 @@ string "Hello World" zu. Untersuchen Sie ob der Buchstabe "o" in dem string
 enthalten ist.
 Bonus fuer die Pros: Geben Sie die Postionen an, wo der Buchstabe "o" in dem 
 String vorkommt. Verwenden Sie nicht die "find" funktion."""
-
+#Loesung
+sen = "Hello World"
+print("o" in sen)
 
 #Aufgabe 3 (find Funktion fuer Strings)
 """ Erstellen Sie eine Variable mit dem Namen "sen" und weisen Sie Ihr den 
@@ -24,7 +27,10 @@ Bonus fuer die Pros: Wie wuerden Sie die Position des zweiten "o" finden"""
 sen = "Hello World"
 position = sen.find("e")
 print(position)
-
+#Loesung
+sen = "Hello World"
+position = sen.find("o")
+print(position)
 
 # Aufgabe 4 (Ausgabe von einzelnen Zeichen in einem String)
 """ Erstellen Sie eine Variable mit dem Namen "sen" und weisen Sie Ihr den 
@@ -35,7 +41,9 @@ Bonus fuer die Pros: Zaehlen Sie wie oft der Buchstabe "o" in dem String
 vorkommt und speichern Sie diese Zahl in einer neuen Variable. """
 sen="Hallo World"
 print(sen[0])
-
+#Loesung
+sen = "Hello World"
+print(sen[-2])
 
 #Aufgabe 5 (String slicing)
 """ Erstellen Sie eine Funktion mit dem Namen "last_letters" die als Input ein 
@@ -48,7 +56,14 @@ in eine neue Variable speichern kann
 Bonus fuer die Pros: Schneiden Sie die ersten 2 und letzten 2 Buchstaben 
 von dem String ab und geben Sie Ihn aus."""
 satz="Hello World"
-last2=satz[-1:]
+last2=satz[-2:]
+
+#Loesung
+def last_letters(sen):
+    last3 = sen [-3:]
+    print(last3)
+    return(last3)
+last_letters(satz)
 
 
 #Aufgabe 6 (Integer vs String)
@@ -58,7 +73,9 @@ Aendern Sie den Code so, dass der Fehler behoben wird
 und die Addition funktioniert. """
 string = "123456789"
 result = string + 10
-
+#Loesung
+string = 123456789
+result = string + 10
 
 #Aufgabe 7 (String Concatenation)
 """Gegeben ist der untenstehende code. Fuehren Sie diesen aus. Was kommt raus?
@@ -78,7 +95,9 @@ genommen wird. Am Ende sollte der neue string wie folgt aussehen: "97531"
 Bonus fuer die Pros: Summieren Sie die einzelnen Zahlen auf, also in dem
 Beispiel waere das 9+7+5+3+1
 """
+#Loesung
 string="0123456789"
+print(string[-1::-2])
 
 
 #Aufgabe 9
@@ -97,13 +116,23 @@ Hier ist ein Beispiel wie man einen String in einen float umwandelt"""
 num_str="     0.23456"
 num_float=float(num_str)
 
+#Loesung
 text = "X-DSPAM-Confidence:    0.8475"
-
+pos = text.find(":") + 1
+num_text= text[pos:]
+num_float = float(num_text)
+print(num_float)
 
 #Aufgabe 10
 """ Erstellen Sie eine Funktion mit dem Namen print_string die einen beliebigen
  string als input hat. Die Funktion gibt jeden einzelnen Buchstaben mit der 
  print() Funktion aus. Verwenden Sie eine for-schleife"""
+#Loesung
+def print_string (sen):
+    for ii in sen:
+        print(ii)
+
+print_string("Ein beliebiger Satz")
 
 
 #Aufgabe 11
@@ -113,9 +142,12 @@ beide strings vereint. Einmal mit Leerzeichen (str3_space) und einmal ohne
 (str3_nospace)"""
 str1="Hello"
 str2="World"
+#Loesung
+str3_nospace = str1+str2
+str3_space = str1 + " " + str2
 
 
-#Aufgabe 12
+#Aufgabe 12 (Hausaufgabe)
 """ Erstellen Sie eine Funktion mit dem Namen ltor die 
 einen beliebigen string als input hat. 
 Die Funktion geht durch den string durch und ersetzt 

@@ -5,6 +5,8 @@ Eigenschaften enthaelt (keys):
 Die entsprechenden Werte (values) sind:
     2000, 150, 60
  """
+#Loesung
+polo = {"Gewicht":2000, "Leistung":150, "Tankfuellung":60}
 
 
 #Aufgabe 2 (Erstellen einer Funktion)
@@ -15,7 +17,14 @@ Am Ende Gibt die Funktion das Dictionary mit dem neuen Tankinhalt zurueck
 Die Formel fuer den Verbrauch kann man folgendermassen berechnen
 verbrauch=Gewicht/2*Leistung/4 /5000
 """
-
+#Loesung
+def tank_berechnung (auto, strecke):
+    verbrauch=auto["Gewicht"]/2*auto["Leistung"]/4 /5000
+    verbrauch_liter = verbrauch / 100 * strecke
+    polo["Tankfuellung"]=polo["Tankfuellung"] - verbrauch_liter
+    return auto
+polo = tank_berechnung(polo,100)
+print(polo["Tankfuellung"])
 
 #Aufgabe 3 (Jeder String ist ein Objekt)
 """Gegeben ist der unten stehende String "bsp_str". 
@@ -23,6 +32,8 @@ Wandeln Sie jeden Buchstaben in dem String in einen Grossbuchstaben um.
 Verwenden Sie dazu die entsprechende Methode. Verwenden Sie google oder dir() 
 um die richtige Methode zu finden"""
 bsp_str="alles klein"
+#Loesung
+bsp_str=bsp_str.upper()
  
 
 #Aufgabe 4 (Erstellen eines Objektes mit gegebener Klasse)
@@ -35,6 +46,12 @@ class auto:
     Gewicht=2000
     Leistung = 150
     Tankinhalt = 60
+    
+#Loesung
+polo = auto()
+print(polo.Gewicht)
+polo.Gewicht=1200
+print(polo.Gewicht)
     
 
 #Aufgabe 5 (Funktionen in einer Klasse)
@@ -52,8 +69,8 @@ class Auto:
     tankinhalt = 60
   
     def tank_berechnung(self,strecke):
-        verbrauch=gewicht/2*leistung/4 /5000
-        tankinhalt = tankinhalt - (verbrauch*strecke/100)
+        verbrauch=self.gewicht/2*self.leistung/4 /5000
+        self.tankinhalt = self.tankinhalt - (verbrauch*strecke/100)
         
     
 polo=Auto()

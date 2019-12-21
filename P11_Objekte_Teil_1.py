@@ -101,7 +101,11 @@ class Auto:
 polo=Auto()
 print(polo.tankinhalt)
 # Bis hier ausfuehren, danach den rest
-polo.tank_berechnung(100)
+print(polo.tank_berechnung(100))
+print(polo.tankinhalt)
+
+#Loesung
+polo.tankinhalt = polo.tank_berechnung(100)
 print(polo.tankinhalt)
 
 
@@ -110,7 +114,22 @@ print(polo.tankinhalt)
 Objekt mit dem Namen "smart" und aendern Sie das Gewicht und Leistung zu 1500 
 und 100. Geben Sie den Tankinhalt aus, nachdem das Auto eine strecke von 100 
 gefahren ist."""
-    
+class Auto:
+    gewicht=2000
+    leistung = 150
+    tankinhalt = 60
+  
+    def tank_berechnung(self,strecke):
+        verbrauch=self.gewicht/2*self.leistung/4 /5000
+        self.tankinhalt = self.tankinhalt - (verbrauch*strecke/100)
+        
+#Loesung
+smart = Auto()
+smart.gewicht=1500
+smart.leistung = 100
+smart.tank_berechnung(100)
+print(smart.tankinhalt)
+
 
 # Aufgabe 8 (Initializieren eines Objektes)
 """Gegegeben ist die untenstehende Klasse. Aendern Sie die Klasse so das man 
@@ -126,9 +145,7 @@ class Auto:
   
     def tank_berechnung(self,strecke):
         verbrauch=self.gewicht/2*self.leistung/4 /5000
-        tankinhalt = self.tankinhalt - (verbrauch*strecke/100)
-
-        
+        self.tankinhalt = self.tankinhalt - (verbrauch*strecke/100)       
     
 polo=Auto(1500)
 print(polo.tankinhalt)
@@ -144,6 +161,21 @@ folgende Eigenschaften: 1800, 100, 50. Das Zweite Objekt heist "passat" und hat
 folgende Eigenschaften: 2200, 120, 60. Berechnen Sie nun die Differenz des 
 Tankinhaltes wenn der golf eine Strecke von 100 und der passat eine Strecke von 
 150 faehrt"""
+class Auto:
+    def __init__(self,gewicht,leistung,tankinhalt):
+        self.gewicht=gewicht
+        self.leistung = leistung
+        self.tankinhalt = tankinhalt
+
+    def tank_berechnung(self,strecke):
+        verbrauch=self.gewicht/2*self.leistung/4 /5000
+        self.tankinhalt = self.tankinhalt - (verbrauch*strecke/100)
+
+golf=Auto(1800,100,50)
+passat = Auto(2000,120,60)
+golf.tank_berechnung(100)
+passat.tank_berechnung(120)
+tankdifferenz = golf.tankinhalt - passat.tankinhalt
 
 
 # Aufgabe 10 (Spezial Funktionen in einer Klasse)
@@ -275,5 +307,3 @@ print(c)
 print(float(c))
 print(Fraction.__float__(c))
 print(float(b.inverse()))
-
-

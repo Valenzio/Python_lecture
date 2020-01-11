@@ -9,7 +9,11 @@ class Auto:
 
     def __init__(self,gewicht):
         self.gewicht= gewicht
-
+#Loesung
+polo = Auto (1500)
+print(polo.gewicht)
+polo.gewicht= (1200)
+print(polo.gewicht)
 
 # Aufgabe 2 (public vs privat)
 """Gegeben ist die Klasse "Auto2".
@@ -24,7 +28,12 @@ class Auto2:
 
     def __init__(self,gewicht):
         self.__gewicht = gewicht
-        
+#Loesung     
+polo = Auto (1500)
+print(polo.gewicht)
+
+polo.leistung= (1200)
+print(polo2.gewicht)        
         
 #Aufgabe 3
 """Gegeben ist die Klasse "Auto3".
@@ -48,7 +57,11 @@ class Auto3:
 
     def set_gewicht(self, gewicht):
         self.__gewicht = gewicht
-
+#Loesung
+polo = Auto3(1500)
+print(polo.get_gewicht())
+polo.set_gewicht(1200)
+print(polo.get_gewicht())
 
 #Aufgabe 3.1
 """Gegeben ist die Klasse "Auto3".
@@ -73,7 +86,11 @@ class Auto3:
 
     def set_gewicht(self, gewicht):
         self.__gewicht = gewicht
-
+#Loesung
+polo = Auto3(1500)
+print(polo.get_gewicht())
+polo.set_gewicht(1200)
+print(polo.get_gewicht())
 
 # Aufgabe 4
 """Gegeben ist wieder die Klasse "Auto" von Aufgabe 1. 
@@ -97,6 +114,13 @@ class Auto:
             self.gewicht=1200
         else:
             self.gewicht= gewicht
+#Loesung        
+polo = Auto(1100)
+print(polo.gewicht)
+golf = Auto(1300)
+print(golf.gewicht)
+golf.gewicht= 1300
+print(golf.gewicht)
 
 
 #Aufgabe 5
@@ -114,7 +138,7 @@ das Objekt mit einem Gewicht von 1300
 1300
 6. Geben Sie das Gewicht von dem Objekt "golf" in der Konsole wieder
 War das Sinn und zweck des Objektes?"""
-class Auto3:
+class Auto3():
 
     def __init__(self,gewicht):
         self.set_gewicht(gewicht)
@@ -127,7 +151,13 @@ class Auto3:
             self.__gewicht=1200
         else:
             self.__gewicht= gewicht
-
+#Loesung         
+polo = Auto3(1100)
+print(polo.get_gewicht())
+golf = Auto3(1300)
+print(golf.get_gewicht())
+golf.set_gewicht(1300)
+print(golf.get_gewicht())
         
 #Aufgabe 6
 """Gegeben ist die Klasse "Auto4". Vergleichen Sie es mit der Klasse "Auto3" 
@@ -149,7 +179,12 @@ class Auto4:
 
     def set_gewicht(self, gewicht):
         self.__gewicht = gewicht
-        
+
+#Loesung       
+polo = Auto4()
+print(polo.get_gewicht())
+golf = Auto4(1200)
+print(golf.get_gewicht())
 
 #Aufgabe 7
 """Schauen sie sich die Klasse "Auto4" an und vergleichen Sie diese mit der aus 
@@ -184,23 +219,26 @@ class Motorrad(Auto4):
         print("Blau")
     def __str__(self):
         return("Mein Motorrad wiegt " +str(self.get_gewicht())+"kg")
-
+#Loesung
+hornet = Motorrad (150)
+print(hornet.get_gewicht())
+print(hornet)
 
 #Aufgabe 9 
 """Wir wollen die "Motorrad" Klasse aus Aufgabe 8 erweitern indem wir die Farbe 
 des Motorrad Objektes in der Initialisierung vorgeben.
 1. Fuegen sie den setter "set_farbe" zu der Klasse "Motorrad" hinzu
-2. Fuegen sie den setter "get_farbe" zu der Klasse "Motorrad" hinzu"""
+2. Fuegen sie den getter "get_farbe" zu der Klasse "Motorrad" hinzu"""
 class Motorrad(Auto4):
     def __init__(self,gewicht,farbe):
         Auto4.__init__(self,gewicht) #initiierung von Auto4
         self.set_farbe(farbe)   #neue initiierung
         
-    def set_farbe():
+    def set_farbe(self,farbe):
+        self.farbe = farbe
         
-        
-    def get_farbe():
-        
+    def get_farbe(self):
+        return(self.farbe)
         
     def __str__(self):
         return("Mein Motorrad wiegt " +str(self.get_gewicht())+"kg")
@@ -216,6 +254,9 @@ zuvor die Klasse Motorrad aus Aufgabe 9 in den Arbeitsspeicher."""
 class Roller(Motorrad):
     
     def __init__(self,gewicht,farbe,leistung):
+        self.set_gewicht(gewicht)
+        self.set_farbe(farbe)
+        self.set_leistung(leistung)
          #initiierung von Motorrad
          #neue initiierung
         
@@ -247,9 +288,13 @@ class Roller(Motorrad):
         
     def get_leistung(self):
         return(self.__leistung)
+    
+    def __str__(self):
+        return("Mein Roller wiegt " +str(self.get_gewicht())+"kg")
 
 schwalbe=Roller(120,"orange",3)
 print(schwalbe)
+
 
 
 

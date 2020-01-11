@@ -188,13 +188,17 @@ class Auto:
         self.tankinhalt=tankinhalt
     
     def __str__(self):
-            return("Beispiel")
+            return(str(self.tankinhalt))
 
     def tank_berechnung(self,strecke):
         verbrauch=self.gewicht/2*self.leistung/4 /5000
         tankinhalt = self.tankinhalt - (verbrauch*strecke/100)
         return (tankinhalt)
-    
+
+#Loesung
+golf = Auto(1500,160,50)
+print(golf)
+
 # Aufgabe 11 
 """erstellen Sie 2 listen
 l1=[1,2,3]
@@ -203,7 +207,15 @@ verwenden sie das "+" zeichen um die 2 Listen mit einander zu verknuepfen,
 speichern sie das Ergebnis in der Variable "sum_list".
 Machen sie das gleiche nochmal nur anstatt listen verwenden Sie numpy arrays.
 n1 und n2 mit dem gleichen Inhalt wie l1 und l2. Was ist der Unterschied?"""        
-
+#Loesung
+l1 = [1,2,3]
+l2 = [4,5,6]
+sum_list = l1+l2
+#Numpy arrays
+import numpy as np
+l1 = np.array([1,2,3])
+l2 = np.array([4,5,6])
+sum_list = l1+l2
 
 # Aufgabe 12 (List comprehension)
 """Schauen Sie sich den folgenden code an, was genau macht dieser Code.
@@ -234,13 +246,17 @@ class Arrlist:
         sum_list=[x[0] + x[1] for x in zip(self.simple_list, other.simple_list)]
         return (Arrlist(sum_list))
     
+    def __sub__(self,other):
+        sum_list=[x[0] - x[1] for x in zip(self.simple_list, other.simple_list)]
+        return (Arrlist(sum_list))
+    
     def __str__(self):
         return(str(self.simple_list))
         
 l1=Arrlist([1,2,3])
 l2=Arrlist([4,5,6])
 
-l_sum=l1+l2
+l_sum=l1-l2
 print(l_sum)
 
 
@@ -267,6 +283,10 @@ class Arrlist:
 l1=Arrlist([1,2,3])
 l2=Arrlist([4,5,6])
 
+l_sum = l1+l2
+print(l_sum)
+l_sum = l1.add(l2)
+print(l_sum)
 
 # Aufgabe 15 (Hausaufgabe)
 """Schauen Sie sich den folgenden Code an und versuchen Sie ihn zu verstehen

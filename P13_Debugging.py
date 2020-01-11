@@ -28,7 +28,7 @@ ihn/sie aus"""
 import pandas as pd
 
 df=pd.DataFrame([[3,4,5],[4,5,3],[3,1,3]], index=[1,2,3],columns=["a","b","c"])
-last_column=df.iloc[:,2]
+last_column=df.iloc[:,1]
 
 
 #Aufgabe 5

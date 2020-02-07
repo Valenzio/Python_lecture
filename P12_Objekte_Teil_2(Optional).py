@@ -29,11 +29,10 @@ class Auto2:
     def __init__(self,gewicht):
         self.__gewicht = gewicht
 #Loesung     
-polo = Auto (1500)
-print(polo.gewicht)
+polo = Auto2 (1500) #wird nicht funktionieren
+print(polo.gewicht) # Funktioniert
 
-polo.leistung= (1200)
-print(polo2.gewicht)        
+print(polo2.gewicht) #wird auch nicht funktionieren
         
 #Aufgabe 3
 """Gegeben ist die Klasse "Auto3".
